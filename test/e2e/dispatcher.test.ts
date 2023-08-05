@@ -23,4 +23,17 @@ describe('Dispatcher Test E2E', () => {
       });
     });
   });
+
+  describe('Get Available Drone', () => {
+    it('should get available drones', async () => {
+      const res = await server.get(`/api/drones/available`);
+
+      if (res.error) console.log(res.error);
+
+      assert.equal(res.statusCode, 200);
+      documentation.addEndpoint(res, {
+        tags: ['Drone'],
+      });
+    });
+  });
 });

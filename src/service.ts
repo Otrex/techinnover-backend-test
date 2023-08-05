@@ -2,6 +2,7 @@ import { AppDataSource } from './database/connection';
 import { Drone } from './database/entities/Drone.entity';
 import { LoadedDrone } from './database/entities/LoadedDrone.entity';
 import { Medication } from './database/entities/Medication.entity';
+import { DroneState } from './database/enum';
 import AppError from './lib/errors';
 import Validate from './lib/validator';
 import { AddDroneRequest } from './validators';
@@ -24,5 +25,15 @@ export default class Service {
     });
 
     return { drone };
+  }
+
+  async getAvailableDrones() {
+    const drones = await this.droneRepo.find({
+      where: {
+        state: DroneState.IDLE
+      }
+    })
+
+    return { drones };
   }
 }

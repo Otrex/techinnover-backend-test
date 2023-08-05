@@ -33,8 +33,10 @@ router.get('/drones/:drone_id/loaded-medications', (req, res, next) => {
 });
 
 // Get a list of available drones for loading
-router.get('/drones/available-for-loading', (req, res, next) => {
+router.get('/drones/available', async (req, res, next) => {
   try {
+    const data = await service.getAvailableDrones();
+    return res.status(200).json(data);
   } catch (error) {
     next(error);
   }

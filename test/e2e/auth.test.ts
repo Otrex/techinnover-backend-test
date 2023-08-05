@@ -17,7 +17,7 @@ describe('Dispatcher Test E2E', () => {
 
       if (res.error) console.log(res.error);
 
-      assert.equal(res.statusCode, 200);
+      assert.equal(res.statusCode, 201);
       documentation.addEndpoint(res, {
         tags: ['Drone'],
       });

@@ -17,5 +17,88 @@
       "bearerAuth": []
     }
   ],
-  "paths": {}
+  "paths": {
+    "/api/drones": {
+      "post": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "Drone"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "model": {
+                    "type": "string"
+                  },
+                  "serialNumber": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "model": "Middleweight",
+                "serialNumber": "6118669005688797561893974192160529397157216120272445945116703539797009953867396581820702496242055302"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "drone": {
+                      "type": "object",
+                      "properties": {
+                        "model": {
+                          "type": "string"
+                        },
+                        "serialNumber": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "string"
+                        },
+                        "weightLimit": {
+                          "type": "number"
+                        },
+                        "state": {
+                          "type": "string"
+                        },
+                        "isActive": {
+                          "type": "boolean"
+                        },
+                        "batteryCapacity": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "drone": {
+                    "model": "Middleweight",
+                    "serialNumber": "6118669005688797561893974192160529397157216120272445945116703539797009953867396581820702496242055302",
+                    "id": "863cd44c-e48e-4520-87ed-77b5c291d9a7",
+                    "weightLimit": 500,
+                    "state": "IDLE",
+                    "isActive": true,
+                    "batteryCapacity": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

@@ -57,6 +57,22 @@ export default class Service {
     return { medications };
   }
 
+  @Validate(GetDroneRequest)
+  async getLoadedDrone(params: GetDroneRequest) {
+    const drone = await this.droneRepo.findOne({
+      where: {
+        id: params.droneId
+      },
+      relations: [
+        "loaded"
+      ]
+    })
+
+    if (!drone) throw new AppError(`drone not found`, 404);
+    
+    return { drone }
+  }
+
   @Validate(LoadDroneRequest)
   async loadDrone(params: LoadDroneRequest) {
     const drone = await this.droneRepo.findOne({

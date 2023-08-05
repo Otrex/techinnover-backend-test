@@ -68,4 +68,22 @@ describe('Dispatcher Test E2E', () => {
       });
     });
   });
+
+  describe('Load Medications', () => {
+    it('should load medications to drone', async () => {
+      const res = await server.post(`/api/drones/${droneId}/load`).send({
+        medicationItems: faker.helpers.arrayElements(
+          medications.map((m) => m.id),
+          3
+        )
+      });
+
+      if (res.error) console.log(res.error);
+
+      assert.equal(res.statusCode, 200);
+      documentation.addEndpoint(res, {
+        tags: ['Medications'],
+      });
+    });
+  });
 });

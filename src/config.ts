@@ -3,10 +3,11 @@ import { join } from 'path';
 import { SqliteConnectionOptions } from 'typeorm/driver/sqlite/SqliteConnectionOptions';
 import { SeederOptions } from 'typeorm-extension';
 dotenv.config({
-  path: process.env.APP_ENV !== 'production'
-    ? join(__dirname, '..', '.env.dev')
-    : join(__dirname, '..', '.env'),
-})
+  path:
+    process.env.APP_ENV !== 'production'
+      ? join(__dirname, '..', '.env.dev')
+      : join(__dirname, '..', '.env'),
+});
 
 type Config = {
   app: Record<string, any>;
@@ -26,7 +27,9 @@ const config: Config = {
     database: join(
       __dirname,
       'database',
-      process.env.APP_ENV !== 'test' ? process.env.DB || 'data.sqlite' : process.env.TEST_DB || 'data.test.sqlite'
+      process.env.APP_ENV !== 'test'
+        ? process.env.DB || 'data.sqlite'
+        : process.env.TEST_DB || 'data.test.sqlite'
     ),
     seeds: [__dirname + '/**/seeds/*.seed{.ts,.js}'],
     factories: [__dirname + '/**/seeds/*.factory{.ts,.js}'],

@@ -10,9 +10,9 @@ router.get('/medications', async (req, res, next) => {
     const data = await service.getMedications();
     return res.status(200).json(data);
   } catch (error) {
-    next(error)
+    next(error);
   }
-})
+});
 
 // Register a new drone
 router.post('/drones', async (req, res, next) => {
@@ -36,13 +36,12 @@ router.get('/drones/available', async (req, res, next) => {
   }
 });
 
-
 // Load medication items into a drone
 router.post('/drones/:drone_id/load', async (req, res, next) => {
   try {
     const data = await service.loadDrone({
       droneId: req.params.drone_id,
-      medicationItems: req.body.medicationItems
+      medicationItems: req.body.medicationItems,
     });
     return res.status(200).json(data);
   } catch (error) {
@@ -57,7 +56,6 @@ router.get('/drones/:drone_id/loaded-medications', (req, res, next) => {
     next(error);
   }
 });
-
 
 // Get the battery level for a given drone
 router.get('/drones/:drone_id/battery-level', async (req, res, next) => {

@@ -12,11 +12,11 @@ export class AddDroneRequest {
 }
 
 export class GetDroneRequest {
-  @IsUUID("all")
+  @IsUUID('all')
   droneId: string;
 }
 
 export class LoadDroneRequest extends GetDroneRequest {
-  @IsUUID("all", { each: true })
+  @IsUUID('all', { each: true })
   medicationItems: string[];
 }

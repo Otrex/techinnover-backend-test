@@ -17,8 +17,8 @@ app.use(
   })
 );
 
-app.use('/docs', SwaggerUi.serve)
-app.get('/docs', SwaggerUi.setup(require(config.app.apiDocs)))
+app.use('/docs', SwaggerUi.serve);
+app.get('/docs', SwaggerUi.setup(require(config.app.apiDocs)));
 
 app.use('/api', Routes);
 

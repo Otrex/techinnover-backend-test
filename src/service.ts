@@ -31,74 +31,84 @@ export default class Service {
   async getDroneBatteryLevel(params: GetDroneRequest) {
     const drone = await this.droneRepo.findOne({
       where: {
-        id: params.droneId
-      }
-    })
+        id: params.droneId,
+      },
+    });
 
     if (!drone) throw new AppError(`drone not found`, 404);
 
     return {
-      batteryLevel: drone.batteryCapacity
-    }
+      batteryLevel: drone.batteryCapacity,
+    };
   }
 
   async getAvailableDrones() {
     const drones = await this.droneRepo.find({
       where: {
-        state: DroneState.IDLE
-      }
-    })
+        state: DroneState.IDLE,
+      },
+    });
 
     return { drones };
   }
 
   async getMedications() {
     const medications = await this.medicationRepo.find({});
-    return {medications};
+    return { medications };
   }
 
   @Validate(LoadDroneRequest)
   async loadDrone(params: LoadDroneRequest) {
     const drone = await this.droneRepo.findOne({
       where: {
-        id: params.droneId
-      }
-    })
+        id: params.droneId,
+      },
+    });
 
-    if (!drone) throw new AppError(`drone not found`)
+    if (!drone) throw new AppError(`drone not found`);
     if (drone.state !== DroneState.IDLE) throw new AppError(`drone is busy`);
 
-    const medicationItems = await Promise.all(params.medicationItems.map(id => this.medicationRepo.findOne({
-      where: {
-        id
-      }
-    })))
+    const medicationItems = await Promise.all(
+      params.medicationItems.map((id) =>
+        this.medicationRepo.findOne({
+          where: {
+            id,
+          },
+        })
+      )
+    );
 
-    const notFoundIndex = medicationItems.findIndex(m => !m || m === null);
+    const notFoundIndex = medicationItems.findIndex((m) => !m || m === null);
     if (notFoundIndex !== -1) throw new AppError(`medication ${notFoundIndex} not found`);
 
     // Check if the drone can be loaded with more weight
-    const totalWeight = medicationItems
-      .reduce((sum, medication) => sum + medication!.weight, 0);
+    const totalWeight = medicationItems.reduce((sum, medication) => sum + medication!.weight, 0);
 
     if (totalWeight > drone.weightLimit) {
-      throw new AppError(`total weight exceeds drone weight limit`)
+      throw new AppError(`total weight exceeds drone weight limit`);
     }
 
     // Check if the drone battery level is sufficient for loading
     if (drone.batteryCapacity < 25) {
-      throw new AppError(`drone battery level is too low for loading`)
+      throw new AppError(`drone battery level is too low for loading`);
     }
 
-    await Promise.all(medicationItems.map(medication => this.loadedDroneRepo.save({
-      drone: drone,
-      medication: medication!,
-    })))
+    await Promise.all(
+      medicationItems.map((medication) =>
+        this.loadedDroneRepo.save({
+          drone: drone,
+          medication: medication!,
+        })
+      )
+    );
 
-    await this.droneRepo.update({ 
-      id: drone.id
-    }, {
-      state: DroneState.LOADED
-    })
+    await this.droneRepo.update(
+      {
+        id: drone.id,
+      },
+      {
+        state: DroneState.LOADED,
+      }
+    );
   }
 }

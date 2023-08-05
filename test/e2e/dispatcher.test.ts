@@ -34,7 +34,7 @@ describe('Dispatcher Test E2E', () => {
       if (res.error) console.log(res.error);
 
       assert.equal(res.statusCode, 200);
-      
+
       droneId = faker.helpers.arrayElement<any>(res.body.drones)?.id;
       documentation.addEndpoint(res, {
         tags: ['Drone'],

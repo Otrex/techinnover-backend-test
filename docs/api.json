@@ -22,9 +22,7 @@
       "post": {
         "summary": "",
         "description": "",
-        "tags": [
-          "Drone"
-        ],
+        "tags": ["Drone"],
         "parameters": [],
         "requestBody": {
           "content": {
@@ -104,9 +102,7 @@
       "get": {
         "summary": "",
         "description": "",
-        "tags": [
-          "Drone"
-        ],
+        "tags": ["Drone"],
         "parameters": [],
         "responses": {
           "200": {
@@ -197,9 +193,7 @@
       "get": {
         "summary": "",
         "description": "",
-        "tags": [
-          "Drone"
-        ],
+        "tags": ["Drone"],
         "parameters": [],
         "responses": {
           "200": {
@@ -227,9 +221,7 @@
       "get": {
         "summary": "",
         "description": "",
-        "tags": [
-          "Medications"
-        ],
+        "tags": ["Medications"],
         "parameters": [],
         "responses": {
           "200": {

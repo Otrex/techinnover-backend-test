@@ -9,6 +9,8 @@ const server = supertest.agent(app);
 
 describe('Dispatcher Test E2E', () => {
   let droneId: string;
+  let medications: Record<string, any>[];
+
   describe('Register Drone', () => {
     it('should register a drone', async () => {
       const res = await server.post(`/api/drones`).send({
@@ -32,7 +34,6 @@ describe('Dispatcher Test E2E', () => {
       if (res.error) console.log(res.error);
 
       assert.equal(res.statusCode, 200);
-      console.log(res.body);
       
       droneId = faker.helpers.arrayElement<any>(res.body.drones)?.id;
       documentation.addEndpoint(res, {
@@ -50,6 +51,20 @@ describe('Dispatcher Test E2E', () => {
       assert.equal(res.statusCode, 200);
       documentation.addEndpoint(res, {
         tags: ['Drone'],
+      });
+    });
+  });
+
+  describe('Get Medications', () => {
+    it('should get medications', async () => {
+      const res = await server.get(`/api/medications`);
+
+      if (res.error) console.log(res.error);
+
+      assert.equal(res.statusCode, 200);
+      medications = res.body.medications;
+      documentation.addEndpoint(res, {
+        tags: ['Medications'],
       });
     });
   });

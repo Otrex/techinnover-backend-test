@@ -4,6 +4,16 @@ import Service from './service';
 const service = new Service();
 const router = Router();
 
+// Get medications
+router.get('/medications', async (req, res, next) => {
+  try {
+    const data = await service.getMedications();
+    return res.status(200).json(data);
+  } catch (error) {
+    next(error)
+  }
+})
+
 // Register a new drone
 router.post('/drones', async (req, res, next) => {
   try {

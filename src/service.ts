@@ -52,6 +52,11 @@ export default class Service {
     return { drones };
   }
 
+  async getMedications() {
+    const medications = await this.medicationRepo.find({});
+    return {medications};
+  }
+
   @Validate(LoadDroneRequest)
   async loadDrone(params: LoadDroneRequest) {
     const drone = await this.droneRepo.findOne({

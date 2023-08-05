@@ -59,20 +59,11 @@ export default class Service {
 
   @Validate(GetDroneRequest)
   async getLoadedDrone(params: GetDroneRequest) {
-    // const drone = await this.droneRepo.findOne({
-    //   where: {
-    //     id: params.droneId
-    //   },
-    //   relations: [
-    //     "load"
-    //   ]
-    // })
-
     const drone = await this.droneRepo.createQueryBuilder('drone')
-    .leftJoinAndSelect('drone.droneMedications', 'droneMedication')
-    .leftJoinAndSelect('droneMedication.medication', 'medication')
-    .where('drone.id = :droneId', { droneId: params.droneId })
-    .getOne();
+      .leftJoinAndSelect('drone.droneMedications', 'droneMedication')
+      .leftJoinAndSelect('droneMedication.medication', 'medication')
+      .where('drone.id = :droneId', { droneId: params.droneId })
+      .getOne();
 
     if (!drone) throw new AppError(`drone not found`, 404);
 
@@ -81,7 +72,6 @@ export default class Service {
 
   @Validate(LoadDroneRequest)
   async loadDrone(params: LoadDroneRequest) {
-    //TODO Fetch and calculate the current weight on drone
     const drone = await this.droneRepo.findOne({
       where: {
         id: params.droneId,

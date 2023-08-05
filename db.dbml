@@ -1,0 +1,48 @@
+enum DroneModelType {
+  Lightweight
+  Middleweight
+  Cruiserweight
+  Heavyweight
+}
+
+enum DroneState {
+  IDLE 
+  LOADING 
+  LOADED 
+  DELIVERING 
+  DELIVERED 
+  RETURNING
+}
+
+// 10 Drones
+
+table Drone as drone {
+  id int
+  serialNumber varchar(100)
+  model DroneModelType
+  batteryLevel int [default: 0]
+  weightLimit int [max: 500] // in kg
+  state DroneState [default: IDLE]
+}
+
+table Medication as medication {
+  id int
+  name varchar [note: "allow only letters, numbers, '-', '_'"]
+  weight int
+  code varchar [note: "allow only uppercase letters, numbers, and _"]
+  image varchar
+}
+
+// ENDPOINTS
+// ========================================
+// Register Drone
+// Add Medication to Drone
+// Get loaded Medication given the drone
+// Get Drone that are IDLE
+// Check drone battery level
+
+// REQUIREMENTS
+// ========================================
+// Drone should not be loaded with more than 500kg
+// Drone should not be in loading state if battery level is < 25
+// Run CRON to get battery level event logs

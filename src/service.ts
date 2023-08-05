@@ -5,9 +5,10 @@ import { Medication } from './database/entities/Medication.entity';
 import { DroneState } from './database/enum';
 import AppError from './lib/errors';
 import Validate from './lib/validator';
-import { AddDroneRequest } from './validators';
+import { AddDroneRequest, GetDroneRequest } from './validators';
 
 export default class Service {
+  
   droneRepo = AppDataSource.getRepository(Drone);
   loadedDroneRepo = AppDataSource.getRepository(LoadedDrone);
   medicationRepo = AppDataSource.getRepository(Medication);
@@ -25,6 +26,21 @@ export default class Service {
     });
 
     return { drone };
+  }
+
+  @Validate(GetDroneRequest)
+  async getDroneBatteryLevel(params: GetDroneRequest) {
+    const drone = await this.droneRepo.findOne({
+      where: {
+        id: params.droneId
+      }
+    })
+
+    if (!drone) throw new AppError(`drone not found`, 404);
+
+    return {
+      batteryLevel: drone.batteryCapacity
+    }
   }
 
   async getAvailableDrones() {

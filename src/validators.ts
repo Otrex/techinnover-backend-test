@@ -1,4 +1,4 @@
-import { IsEnum, IsString, MaxLength } from 'class-validator';
+import { IsEnum, IsString, IsUUID, MaxLength } from 'class-validator';
 import { EnumValidatorMessage } from './lib/utils';
 import { DroneModel } from './database/enum';
 
@@ -9,4 +9,9 @@ export class AddDroneRequest {
   @IsString()
   @MaxLength(100)
   serialNumber: string;
+}
+
+export class GetDroneRequest {
+  @IsUUID("all")
+  droneId: string;
 }

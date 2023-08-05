@@ -16,6 +16,17 @@ router.post('/drones', async (req, res, next) => {
   }
 });
 
+// Get a list of available drones for loading
+router.get('/drones/available', async (req, res, next) => {
+  try {
+    const data = await service.getAvailableDrones();
+    return res.status(200).json(data);
+  } catch (error) {
+    next(error);
+  }
+});
+
+
 // Load medication items into a drone
 router.post('/drones/:drone_id/load', (req, res, next) => {
   try {
@@ -32,19 +43,14 @@ router.get('/drones/:drone_id/loaded-medications', (req, res, next) => {
   }
 });
 
-// Get a list of available drones for loading
-router.get('/drones/available', async (req, res, next) => {
-  try {
-    const data = await service.getAvailableDrones();
-    return res.status(200).json(data);
-  } catch (error) {
-    next(error);
-  }
-});
 
 // Get the battery level for a given drone
-router.get('/drones/:drone_id/battery-level', (req, res, next) => {
+router.get('/drones/:drone_id/battery-level', async (req, res, next) => {
   try {
+    const data = await service.getDroneBatteryLevel({
+      droneId: req.params.drone_id,
+    });
+    return res.status(200).json(data);
   } catch (error) {
     next(error);
   }

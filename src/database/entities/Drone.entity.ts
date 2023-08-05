@@ -5,11 +5,11 @@ import { LoadedDrone } from './LoadedDrone.entity';
 @Entity()
 export class Drone {
   @PrimaryGeneratedColumn('uuid')
-  id: number;
+  id: string;
 
   @Column({ length: 100, nullable: false })
   serialNumber: string;
-  
+
   @Column({ type: 'float', default: 500.0 })
   weightLimit: boolean;
 
@@ -22,7 +22,7 @@ export class Drone {
   @Column({ default: true })
   isActive: boolean;
 
-  @Column({ type: 'int', default: 0 })
+  @Column({ type: 'int', default: 100 })
   batteryCapacity: number;
 
   @OneToMany(() => LoadedDrone, (loaded) => loaded.medications)

@@ -6,7 +6,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:4000"
+      "url": "http://localhost:3000"
     }
   ],
   "components": {
@@ -41,8 +41,8 @@
                 }
               },
               "example": {
-                "model": "Heavyweight",
-                "serialNumber": "6583129136456190156290473483885230900503158073866618901496593083867544151963724854767734006475610965"
+                "model": "Cruiserweight",
+                "serialNumber": "4124244036420403988922455581690786641179776899503892402080819699744530321255948111877549073767320760"
               }
             }
           }
@@ -85,13 +85,13 @@
                 },
                 "example": {
                   "drone": {
-                    "model": "Heavyweight",
-                    "serialNumber": "6583129136456190156290473483885230900503158073866618901496593083867544151963724854767734006475610965",
-                    "id": "94d52faf-b160-4c31-b7de-038e93dc5f2c",
+                    "model": "Cruiserweight",
+                    "serialNumber": "4124244036420403988922455581690786641179776899503892402080819699744530321255948111877549073767320760",
+                    "id": "1b1119a9-d245-4f32-b4c6-313de85af022",
                     "weightLimit": 500,
                     "state": "IDLE",
                     "isActive": true,
-                    "batteryCapacity": 0
+                    "batteryCapacity": 100
                   }
                 }
               }
@@ -175,8 +175,65 @@
                       "model": "Heavyweight",
                       "isActive": true,
                       "batteryCapacity": 0
+                    },
+                    {
+                      "id": "e4dcd65a-afff-418a-b6a7-364b657ce209",
+                      "serialNumber": "8110572224812639030131934496075012934430976211504644680353351842553909224635929123562379160358629878",
+                      "weightLimit": 500,
+                      "state": "IDLE",
+                      "model": "Heavyweight",
+                      "isActive": true,
+                      "batteryCapacity": 100
+                    },
+                    {
+                      "id": "7d54ae55-2047-41b0-8457-897411819453",
+                      "serialNumber": "3179082683521839033468544675853241506580841722319741648794776797194239257658060787943677364335291711",
+                      "weightLimit": 500,
+                      "state": "IDLE",
+                      "model": "Middleweight",
+                      "isActive": true,
+                      "batteryCapacity": 100
+                    },
+                    {
+                      "id": "1b1119a9-d245-4f32-b4c6-313de85af022",
+                      "serialNumber": "4124244036420403988922455581690786641179776899503892402080819699744530321255948111877549073767320760",
+                      "weightLimit": 500,
+                      "state": "IDLE",
+                      "model": "Cruiserweight",
+                      "isActive": true,
+                      "batteryCapacity": 100
                     }
                   ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/drones/e4dcd65a-afff-418a-b6a7-364b657ce209/battery-level": {
+      "get": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "Drone"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "batteryLevel": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "example": {
+                  "batteryLevel": 100
                 }
               }
             }

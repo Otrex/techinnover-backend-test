@@ -1,4 +1,5 @@
 import express from 'express';
+import SwaggerUi from 'swagger-ui-express';
 import GeneralMiddleware from './middleware';
 import config from './config';
 import Routes from './routes';
@@ -15,6 +16,9 @@ app.use(
     extended: false,
   })
 );
+
+app.use('/docs', SwaggerUi.serve)
+app.get('/docs', SwaggerUi.setup(require(config.app.apiDocs)))
 
 app.use('/api', Routes);
 

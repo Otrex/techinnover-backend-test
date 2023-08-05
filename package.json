@@ -8,11 +8,11 @@
     "prettier": "npx prettier -w .",
     "sync:env": "yarn sync-dotenv",
     "start": "node -r module-alias/register ./build/src/server.js",
+    "typeorm": "typeorm-ts-node-commonjs",
     "build": "rimraf ./build && tsc",
     "test": "APP_ENV=test mocha -r tsconfig-paths/register -r ts-node/register --spec test/**/*.test.ts"
   },
   "dependencies": {
-    "@obisiket1/express-utils": "^0.0.64",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "cors": "^2.8.5",

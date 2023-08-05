@@ -28,8 +28,13 @@ router.get('/drones/available', async (req, res, next) => {
 
 
 // Load medication items into a drone
-router.post('/drones/:drone_id/load', (req, res, next) => {
+router.post('/drones/:drone_id/load', async (req, res, next) => {
   try {
+    const data = await service.loadDrone({
+      droneId: req.params.drone_id,
+      medicationItems: req.body.medicationItems
+    });
+    return res.status(200).json(data);
   } catch (error) {
     next(error);
   }

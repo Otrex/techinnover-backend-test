@@ -11,5 +11,5 @@ export class LoadedDrone {
   drone: Drone;
 
   @ManyToOne(() => Medication, (medication) => medication.id)
-  medications: Medication[];
+  medication: Medication;
 }

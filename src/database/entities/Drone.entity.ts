@@ -11,7 +11,7 @@ export class Drone {
   serialNumber: string;
 
   @Column({ type: 'float', default: 500.0 })
-  weightLimit: boolean;
+  weightLimit: number;
 
   @Column({ default: DroneState.IDLE })
   state: DroneState;
@@ -25,6 +25,6 @@ export class Drone {
   @Column({ type: 'int', default: 100 })
   batteryCapacity: number;
 
-  @OneToMany(() => LoadedDrone, (loaded) => loaded.medications)
+  @OneToMany(() => LoadedDrone, (loaded) => loaded.drone)
   load: LoadedDrone[];
 }

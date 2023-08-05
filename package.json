@@ -26,7 +26,8 @@
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.1.6",
     "swagger-ui-express": "^4.6.3",
-    "typeorm": "^0.3.17"
+    "typeorm": "^0.3.17",
+    "typeorm-extension": "^3.0.1"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",

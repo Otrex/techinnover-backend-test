@@ -5,10 +5,9 @@ import { Medication } from './database/entities/Medication.entity';
 import { DroneState } from './database/enum';
 import AppError from './lib/errors';
 import Validate from './lib/validator';
-import { AddDroneRequest, GetDroneRequest } from './validators';
+import { AddDroneRequest, GetDroneRequest, LoadDroneRequest } from './validators';
 
 export default class Service {
-  
   droneRepo = AppDataSource.getRepository(Drone);
   loadedDroneRepo = AppDataSource.getRepository(LoadedDrone);
   medicationRepo = AppDataSource.getRepository(Medication);
@@ -51,5 +50,50 @@ export default class Service {
     })
 
     return { drones };
+  }
+
+  @Validate(LoadDroneRequest)
+  async loadDrone(params: LoadDroneRequest) {
+    const drone = await this.droneRepo.findOne({
+      where: {
+        id: params.droneId
+      }
+    })
+
+    if (!drone) throw new AppError(`drone not found`)
+    if (drone.state !== DroneState.IDLE) throw new AppError(`drone is busy`);
+
+    const medicationItems = await Promise.all(params.medicationItems.map(id => this.medicationRepo.findOne({
+      where: {
+        id
+      }
+    })))
+
+    const notFoundIndex = medicationItems.findIndex(m => !m || m === null);
+    if (notFoundIndex !== -1) throw new AppError(`medication ${notFoundIndex} not found`);
+
+    // Check if the drone can be loaded with more weight
+    const totalWeight = medicationItems
+      .reduce((sum, medication) => sum + medication!.weight, 0);
+
+    if (totalWeight > drone.weightLimit) {
+      throw new AppError(`total weight exceeds drone weight limit`)
+    }
+
+    // Check if the drone battery level is sufficient for loading
+    if (drone.batteryCapacity < 25) {
+      throw new AppError(`drone battery level is too low for loading`)
+    }
+
+    await Promise.all(medicationItems.map(medication => this.loadedDroneRepo.save({
+      drone: drone,
+      medication: medication!,
+    })))
+
+    await this.droneRepo.update({ 
+      id: drone.id
+    }, {
+      state: DroneState.LOADED
+    })
   }
 }

@@ -15,3 +15,8 @@ export class GetDroneRequest {
   @IsUUID("all")
   droneId: string;
 }
+
+export class LoadDroneRequest extends GetDroneRequest {
+  @IsUUID("all", { each: true })
+  medicationItems: string[];
+}

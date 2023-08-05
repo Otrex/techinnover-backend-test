@@ -3,7 +3,6 @@ import GeneralMiddleware from './middleware';
 import config from './config';
 import Routes from './routes';
 
-
 const app = express();
 
 app.use(GeneralMiddleware.CORS);
@@ -17,7 +16,7 @@ app.use(
   })
 );
 
-app.use("/api", Routes)
+app.use('/api', Routes);
 
 app.use('/static', express.static(config.app.staticFilePath));
 

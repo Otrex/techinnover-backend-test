@@ -1,4 +1,4 @@
-import { ValidationOptions } from "class-validator";
+import { ValidationOptions } from 'class-validator';
 
 export const EnumValidatorMessage = <T extends Record<string, any>>(
   e: T,

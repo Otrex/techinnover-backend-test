@@ -5,8 +5,8 @@ export default class AppError extends Error {
 
   constructor(message: string | string[], statusCode = 400) {
     super();
-    
-    this.errorType = "AppError";
+
+    this.errorType = 'AppError';
 
     if (Array.isArray(message)) this.errors = message;
     else this.message = message;

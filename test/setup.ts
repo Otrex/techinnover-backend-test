@@ -1,9 +1,9 @@
 import { AppDataSource } from '@/database/connection';
 import { Documentation } from '@obisiket1/express-utils';
-import { join } from "path"
+import { join } from 'path';
 
 export const documentation = new Documentation({
-  title: "Dispatcher",
+  title: 'Dispatcher',
   filePaths: join(__dirname, '..', 'docs', 'api.json'),
 });
 

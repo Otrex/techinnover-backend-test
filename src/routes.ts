@@ -1,5 +1,5 @@
-import { Router } from "express";
-import Service from "./service";
+import { Router } from 'express';
+import Service from './service';
 
 const service = new Service();
 const router = Router();
@@ -8,8 +8,8 @@ const router = Router();
 router.post('/drones', async (req, res, next) => {
   try {
     const data = await service.addDrone({
-      ...req.body
-    })
+      ...req.body,
+    });
     return res.status(201).json(data);
   } catch (error) {
     next(error);
@@ -19,7 +19,6 @@ router.post('/drones', async (req, res, next) => {
 // Load medication items into a drone
 router.post('/drones/:drone_id/load', (req, res, next) => {
   try {
-    
   } catch (error) {
     next(error);
   }
@@ -28,7 +27,6 @@ router.post('/drones/:drone_id/load', (req, res, next) => {
 // Retrieve loaded medication items for a given drone
 router.get('/drones/:drone_id/loaded-medications', (req, res, next) => {
   try {
-    
   } catch (error) {
     next(error);
   }
@@ -37,7 +35,6 @@ router.get('/drones/:drone_id/loaded-medications', (req, res, next) => {
 // Get a list of available drones for loading
 router.get('/drones/available-for-loading', (req, res, next) => {
   try {
-    
   } catch (error) {
     next(error);
   }
@@ -46,10 +43,9 @@ router.get('/drones/available-for-loading', (req, res, next) => {
 // Get the battery level for a given drone
 router.get('/drones/:drone_id/battery-level', (req, res, next) => {
   try {
-    
   } catch (error) {
     next(error);
   }
 });
 
-export default router
+export default router;

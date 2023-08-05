@@ -10,6 +10,7 @@
     "start": "node -r module-alias/register ./build/src/server.js",
     "typeorm": "typeorm-ts-node-commonjs",
     "build": "rimraf ./build && tsc",
+    "migrate-ts": "npx typeorm-ts-node-esm migration:run --dataSource ./src/database/connection.ts",
     "test": "APP_ENV=test mocha -r tsconfig-paths/register -r ts-node/register --spec test/**/*.test.ts"
   },
   "dependencies": {
@@ -39,6 +40,7 @@
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
+    "prettier": "^3.0.1",
     "rimraf": "^5.0.1",
     "supertest": "^6.3.3",
     "ts-node": "^10.9.1",

@@ -1,6 +1,6 @@
-import { Entity, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
-import { Drone } from "./Drone.entity";
-import { Medication } from "./Medication.entity";
+import { Entity, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
+import { Drone } from './Drone.entity';
+import { Medication } from './Medication.entity';
 
 @Entity()
 export class LoadedDrone {
@@ -11,5 +11,5 @@ export class LoadedDrone {
   drone: Drone;
 
   @ManyToOne(() => Medication, (medication) => medication.id)
-  medications: Medication[]
+  medications: Medication[];
 }

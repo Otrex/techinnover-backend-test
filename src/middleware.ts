@@ -22,8 +22,7 @@ export default class GeneralMiddleware {
       state: 'error',
       type: 'InternalServerError',
       timestamp: Date.now(),
-      message:
-        'Something went wrong | Contact support',
+      message: 'Something went wrong | Contact support',
       ...(config.app.env !== 'production' ? { stack: err.stack } : {}),
     });
   }

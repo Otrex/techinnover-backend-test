@@ -1,11 +1,10 @@
 import express from 'express';
 import GeneralMiddleware from './middleware';
 import config from './config';
+import Routes from './routes';
 
 
 const app = express();
-
-app.set('trust proxy', true);
 
 app.use(GeneralMiddleware.CORS);
 app.use(GeneralMiddleware.DevLogs);
@@ -17,6 +16,8 @@ app.use(
     extended: false,
   })
 );
+
+app.use("/api", Routes)
 
 app.use('/static', express.static(config.app.staticFilePath));
 

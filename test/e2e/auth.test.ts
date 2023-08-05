@@ -10,7 +10,7 @@ const server = supertest.agent(app);
 describe('Dispatcher Test E2E', () => {
   describe('Register Drone', () => {
     it('should register a drone', async () => {
-      const res = await server.post(`/drones`)
+      const res = await server.post(`/api/drones`)
         .send({
           model: faker.helpers.enumValue(DroneModel),
           serialNumber: faker.airline.flightNumber({ length: 100 })

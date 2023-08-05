@@ -51,3 +51,5 @@ router.get('/drones/:drone_id/battery-level', (req, res, next) => {
     next(error);
   }
 });
+
+export default router

@@ -1,6 +1,6 @@
 import { Entity, ManyToMany, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
-import { Drone } from "./Drone";
-import { Medication } from "./Medication";
+import { Drone } from "./Drone.entity";
+import { Medication } from "./Medication.entity";
 
 @Entity()
 export class LoadedDrone {

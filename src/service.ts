@@ -1,7 +1,7 @@
 import { AppDataSource } from "./database/connection";
-import { Drone } from "./database/entities/Drone";
-import { LoadedDrone } from "./database/entities/LoadedDrone";
-import { Medication } from "./database/entities/Medication";
+import { Drone } from "./database/entities/Drone.entity";
+import { LoadedDrone } from "./database/entities/LoadedDrone.entity";
+import { Medication } from "./database/entities/Medication.entity";
 import AppError from "./lib/errors";
 import Validate from "./lib/validator";
 import { AddDroneRequest } from "./validators";

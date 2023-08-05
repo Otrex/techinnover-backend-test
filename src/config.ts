@@ -17,6 +17,7 @@ const config: Config = {
     type :"sqlite",
     database: join(__dirname, "database", "data.sqlite"),
     entities: [__dirname + "/**/*.entity{.ts,.js}"],
+    migrations: [__dirname + "/**/*.migrations{.ts,.js}"],
     synchronize: true
   }
 }

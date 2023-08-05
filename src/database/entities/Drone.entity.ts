@@ -1,6 +1,6 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm"
 import { DroneModel, DroneState } from "../enum";
-import { LoadedDrone } from "./LoadedDrone";
+import { LoadedDrone } from "./LoadedDrone.entity";
 
 @Entity()
 export class Drone {

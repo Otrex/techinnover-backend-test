@@ -1,5 +1,6 @@
 import { ClassConstructor, plainToClass, plainToInstance } from 'class-transformer';
 import { validate, ValidationError as CValidationError } from 'class-validator';
+import AppError from './errors';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type ArgumentTypes<F extends Function> = F extends (...args: infer A) => any ? A : never;
@@ -31,7 +32,7 @@ export default function Validate<T>(type: ClassConstructor<T>) {
       });
       if (errors.length > 0) {
         const constraints = getAllConstraints(errors);
-        throw new ValidationException(constraints.map((c) => Object.values(c)).flat());
+        throw new AppError(constraints.map((c) => Object.values(c)).flat());
       }
       const [params, ...others] = args;
       return originalMethod.apply(this, [{ ...new type(), ...params }, ...others]);

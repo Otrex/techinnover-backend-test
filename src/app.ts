@@ -1,5 +1,5 @@
 import express from 'express';
-import GeneralMiddleware from './middlewares';
+import GeneralMiddleware from './middleware';
 import config from './config';
 
 

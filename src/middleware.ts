@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from 'express';
-import config from '../config';
+import config from './config';
 import cors from 'cors';
 import rateLimit from 'express-rate-limit';
-import AppError from '../../dump/lib/errors';
+import AppError from '@/lib/errors';
 
 export default class GeneralMiddleware {
   static ErrorHandler(err: Error | AppError, req: Request, res: Response, next: NextFunction) {

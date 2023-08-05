@@ -9,6 +9,7 @@ type Config = {
 const config: Config = {
   app: {
     name: process.env.APP_NAME!,
+    port: +(process.env.PORT || 3000),
     env: process.env.APP_ENV! || "development",
     staticFilePath: join(__dirname, "..", "static"),
   },

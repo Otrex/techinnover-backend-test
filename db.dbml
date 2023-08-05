@@ -25,6 +25,11 @@ table Drone as drone {
   state DroneState [default: IDLE]
 }
 
+table LoadedDrone {
+  droneId int
+  medicationIds int [ref: > medication.id]
+}
+
 table Medication as medication {
   id int
   name varchar [note: "allow only letters, numbers, '-', '_'"]

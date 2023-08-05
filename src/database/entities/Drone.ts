@@ -1,9 +1,10 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm"
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm"
 import { DroneModel, DroneState } from "../enum";
+import { LoadedDrone } from "./LoadedDrone";
 
 @Entity()
 export class Drone {
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: number;
 
   @Column({ length: 100, nullable: false  })
@@ -13,14 +14,20 @@ export class Drone {
   batteryLevel: number;
 
   @Column({ type: "float", default: 500.0 })
-  weightLimit: boolean
+  weightLimit: boolean;
 
   @Column({ type: "enum", enum: DroneState, default: DroneState.IDLE })
-  state: DroneState
+  state: DroneState;
 
   @Column({ type: "enum", enum: DroneState, nullable: false })
-  model: DroneModel
+  model: DroneModel;
 
   @Column()
-  isActive: boolean
+  isActive: boolean;
+
+  @Column({ type: 'int' })
+  batteryCapacity: number;
+
+  @OneToMany(() => LoadedDrone, loaded => loaded.medications)
+  load: LoadedDrone[];
 }

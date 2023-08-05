@@ -19,6 +19,7 @@ const config: Config = {
     port: +(process.env.PORT || 3000),
     env: process.env.APP_ENV! || 'development',
     staticFilePath: join(__dirname, '..', 'static'),
+    apiDocs: join(__dirname, '..', 'docs', 'api.json'),
   },
   database: {
     type: 'sqlite',

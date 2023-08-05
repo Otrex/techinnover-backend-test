@@ -1,6 +1,6 @@
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { DroneModel, DroneState } from '../enum';
-import { LoadedDrone } from './LoadedDrone.entity';
+import { DroneMedication } from './DroneMedication.entity';
 
 @Entity()
 export class Drone {
@@ -25,6 +25,6 @@ export class Drone {
   @Column({ type: 'int', default: 100 })
   batteryCapacity: number;
 
-  @OneToMany(() => LoadedDrone, (loaded) => loaded.drone)
-  load: LoadedDrone[];
+  @OneToMany(() => DroneMedication, (droneMedication) => droneMedication.drone)
+  droneMedications: DroneMedication[]
 }

@@ -42,7 +42,7 @@
               },
               "example": {
                 "model": "Middleweight",
-                "serialNumber": "7362639667568508729463775802196693343258463464615553760816849390202231484678134846949334124585609942"
+                "serialNumber": "4812315717061704486204930258867512746832189754656816876041891738356249178128180133687746115619210771"
               }
             }
           }
@@ -86,8 +86,8 @@
                 "example": {
                   "drone": {
                     "model": "Middleweight",
-                    "serialNumber": "7362639667568508729463775802196693343258463464615553760816849390202231484678134846949334124585609942",
-                    "id": "18d8d236-5faa-4974-8be5-57ed57566474",
+                    "serialNumber": "4812315717061704486204930258867512746832189754656816876041891738356249178128180133687746115619210771",
+                    "id": "1f613288-a438-4f06-8263-7afbc4c77418",
                     "weightLimit": 500,
                     "state": "IDLE",
                     "isActive": true,
@@ -150,17 +150,8 @@
                 "example": {
                   "drones": [
                     {
-                      "id": "4d8b7368-56b4-4a42-820b-94b239f73ab3",
-                      "serialNumber": "3433787357524977444564103633854669327981929230654298186003801811150494107791895774448601374774011971",
-                      "weightLimit": 500,
-                      "state": "IDLE",
-                      "model": "Lightweight",
-                      "isActive": true,
-                      "batteryCapacity": 100
-                    },
-                    {
-                      "id": "cf973b88-3690-4fe8-92af-1c88b11c597b",
-                      "serialNumber": "2621837258408512717886613293403078095312664507554522617507129979172154936061615223442447621466108300",
+                      "id": "b37031c9-7ac8-4bbb-aefd-230d4adb1ca9",
+                      "serialNumber": "4490526561965100012032339816889396633851810261144622141552395877924966257850788354775796747081331623",
                       "weightLimit": 500,
                       "state": "IDLE",
                       "model": "Cruiserweight",
@@ -168,53 +159,8 @@
                       "batteryCapacity": 100
                     },
                     {
-                      "id": "7f90a78f-4a86-434b-afc9-d808455d33c6",
-                      "serialNumber": "6702717190277394267795760545061774199350153708940909127221276700620072792917099035659848527132058194",
-                      "weightLimit": 500,
-                      "state": "IDLE",
-                      "model": "Middleweight",
-                      "isActive": true,
-                      "batteryCapacity": 100
-                    },
-                    {
-                      "id": "90fef3ef-e50e-4b61-bce4-430275742923",
-                      "serialNumber": "5111266786765753038709365650502972106385596803121984911123060849788223341711649209307580758442163134",
-                      "weightLimit": 500,
-                      "state": "IDLE",
-                      "model": "Cruiserweight",
-                      "isActive": true,
-                      "batteryCapacity": 100
-                    },
-                    {
-                      "id": "e68ecff6-5806-44e3-8f52-b7b5ac5bcec5",
-                      "serialNumber": "1890670920195679727143619522554397502418563875290312524204474179905994599628279394781797835135986532",
-                      "weightLimit": 500,
-                      "state": "IDLE",
-                      "model": "Lightweight",
-                      "isActive": true,
-                      "batteryCapacity": 100
-                    },
-                    {
-                      "id": "15608c9d-9464-40ba-9bcd-e4cd5d3872aa",
-                      "serialNumber": "6319698085998105848411733789115427497983484340643009629991833363620968898496173610191090035963726664",
-                      "weightLimit": 500,
-                      "state": "IDLE",
-                      "model": "Lightweight",
-                      "isActive": true,
-                      "batteryCapacity": 100
-                    },
-                    {
-                      "id": "7c6baeda-1f0b-4486-9b63-b7489db76529",
-                      "serialNumber": "5452516070868566741719318826964439776017333986088549929491359037906382235144651595467255400378168905",
-                      "weightLimit": 500,
-                      "state": "IDLE",
-                      "model": "Heavyweight",
-                      "isActive": true,
-                      "batteryCapacity": 100
-                    },
-                    {
-                      "id": "18d8d236-5faa-4974-8be5-57ed57566474",
-                      "serialNumber": "7362639667568508729463775802196693343258463464615553760816849390202231484678134846949334124585609942",
+                      "id": "1f613288-a438-4f06-8263-7afbc4c77418",
+                      "serialNumber": "4812315717061704486204930258867512746832189754656816876041891738356249178128180133687746115619210771",
                       "weightLimit": 500,
                       "state": "IDLE",
                       "model": "Middleweight",
@@ -229,7 +175,7 @@
         }
       }
     },
-    "/api/drones/7f90a78f-4a86-434b-afc9-d808455d33c6/battery-level": {
+    "/api/drones/1f613288-a438-4f06-8263-7afbc4c77418/battery-level": {
       "get": {
         "summary": "",
         "description": "",
@@ -303,564 +249,144 @@
                 "example": {
                   "medications": [
                     {
-                      "id": "47379930-882c-4b23-8e7c-02b12f2ab6e8",
-                      "name": "Luxurious Cotton Pants",
-                      "weight": 39.11078870110214,
-                      "code": "PRACTICAL7046791218",
-                      "image": "https://avatars.githubusercontent.com/u/52893294"
+                      "id": "bd53badb-8f56-4a9f-9bc0-5a7dacb264ff",
+                      "name": "Oriental Rubber Cheese",
+                      "weight": 159.65697319805622,
+                      "code": "SMALL COTTON SALAD172059617",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1245.jpg"
                     },
                     {
-                      "id": "6c8ab8b0-d620-403a-a677-e96b8153be15",
-                      "name": "Elegant Cotton Shirt",
-                      "weight": 151.41588811040856,
-                      "code": "HANDMADE4783942584",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/511.jpg"
+                      "id": "d55b4b6c-19c1-489a-b95b-f7c6d87849b7",
+                      "name": "Bespoke Steel Shoes",
+                      "weight": 181.88350675068796,
+                      "code": "HANDMADE FRESH SAUSAGES6177666137",
+                      "image": "https://avatars.githubusercontent.com/u/61410373"
                     },
                     {
-                      "id": "9326d9c5-2bfc-4482-b932-4511ca800039",
-                      "name": "Electronic Fresh Chair",
-                      "weight": 114.80621496448292,
-                      "code": "ELECTRONIC9305817039",
-                      "image": "https://avatars.githubusercontent.com/u/56824559"
+                      "id": "21e866dc-e4f8-43f0-baae-dd452cab7382",
+                      "name": "Small Granite Bacon",
+                      "weight": 84.8173034247011,
+                      "code": "AWESOME CONCRETE MOUSE97696301",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/471.jpg"
                     },
                     {
-                      "id": "8c9e5b8c-5aa3-4dbd-a53c-5c3018696202",
-                      "name": "Bespoke Frozen Towels",
-                      "weight": 6.098381176125258,
-                      "code": "FANTASTIC9972161554",
-                      "image": "https://avatars.githubusercontent.com/u/61529883"
+                      "id": "edb0c727-2f23-409e-b291-a719edbaaec5",
+                      "name": "Gorgeous Metal Mouse",
+                      "weight": 274.1948229249101,
+                      "code": "HANDCRAFTED WOODEN SHIRT8918655482",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/136.jpg"
                     },
                     {
-                      "id": "b7724d70-44d4-4af1-bb03-061c3a26d89a",
-                      "name": "Handcrafted Rubber Hat",
-                      "weight": 130.64575427025557,
-                      "code": "REFINED9443752620",
-                      "image": "https://avatars.githubusercontent.com/u/68280956"
+                      "id": "433bed64-8b80-4f2e-b595-10642df99498",
+                      "name": "Awesome Rubber Chips",
+                      "weight": 34.69200266408734,
+                      "code": "MODERN FRESH SOAP6020261631",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/748.jpg"
                     },
                     {
-                      "id": "8c63452c-8aaa-464a-bf52-71a575a303fe",
-                      "name": "Rustic Concrete Car",
-                      "weight": 238.6961147717666,
-                      "code": "LUXURIOUS6138845178",
-                      "image": "https://avatars.githubusercontent.com/u/65458955"
+                      "id": "87437465-edcc-4ad0-b886-b42b1bb411ef",
+                      "name": "Practical Metal Shirt",
+                      "weight": 4.781217182055116,
+                      "code": "ERGONOMIC FRESH PANTS9464065489",
+                      "image": "https://avatars.githubusercontent.com/u/56850372"
                     },
                     {
-                      "id": "7a1e2526-daa3-481a-8f10-dc67ab371633",
-                      "name": "Awesome Cotton Car",
-                      "weight": 151.9525104551576,
-                      "code": "LUXURIOUS5919407585",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/314.jpg"
+                      "id": "1c565235-db85-47e1-a4c4-1b7ca1dd0c38",
+                      "name": "Unbranded Fresh Chicken",
+                      "weight": 235.87021654704583,
+                      "code": "FANTASTIC FRESH SHOES6259014348",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/529.jpg"
                     },
                     {
-                      "id": "65686c87-e9df-4b58-8018-d3034dc3bfe9",
-                      "name": "Gorgeous Bronze Chair",
-                      "weight": 198.6459350667428,
-                      "code": "ERGONOMIC3763613007",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/208.jpg"
+                      "id": "5ecae243-56ab-43b7-9dd1-5fc2874bbab7",
+                      "name": "Rustic Bronze Car",
+                      "weight": 206.55438231443983,
+                      "code": "PRACTICAL FROZEN TABLE3117003580",
+                      "image": "https://avatars.githubusercontent.com/u/54429469"
                     },
                     {
-                      "id": "a20f413a-8fa8-4fb0-ba61-52eaaff7e974",
-                      "name": "Oriental Metal Chicken",
-                      "weight": 107.97357832617126,
-                      "code": "ERGONOMIC5501654722",
-                      "image": "https://avatars.githubusercontent.com/u/7943148"
+                      "id": "2c123407-e5ed-473b-8057-66e217627f3a",
+                      "name": "Sleek Concrete Tuna",
+                      "weight": 2.589402886806056,
+                      "code": "GORGEOUS METAL TABLE6673617686",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/526.jpg"
                     },
                     {
-                      "id": "cad0b57b-6391-43e0-831f-cd7d32922776",
-                      "name": "Electronic Wooden Shoes",
-                      "weight": 74.02467172243632,
-                      "code": "INCREDIBLE8640338415",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1235.jpg"
+                      "id": "5630a70e-e9ee-4759-b68e-98f6fd875707",
+                      "name": "Incredible Fresh Computer",
+                      "weight": 222.03591641318053,
+                      "code": "TASTY PLASTIC CAR6223147485",
+                      "image": "https://avatars.githubusercontent.com/u/89937083"
                     },
                     {
-                      "id": "dc7477f6-4cc6-49e6-b272-5f66925fdc75",
-                      "name": "Practical Soft Salad",
-                      "weight": 147.86162925045937,
-                      "code": "ELEGANT FROZEN GLOVES2564068966",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1202.jpg"
+                      "id": "9e7c1879-1fc7-4d98-bd83-d5b0801c5b61",
+                      "name": "Small Cotton Cheese",
+                      "weight": 252.4961913626175,
+                      "code": "ELECTRONIC FROZEN SHIRT4404671428",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/615.jpg"
                     },
                     {
-                      "id": "9469b387-13c4-4adb-b492-0362fe5724e9",
-                      "name": "Awesome Fresh Chair",
-                      "weight": 191.74000423355028,
-                      "code": "INCREDIBLE CONCRETE CHICKEN4907427548",
-                      "image": "https://avatars.githubusercontent.com/u/77600414"
+                      "id": "3e8bd436-9a78-4feb-8a8f-733bdab70528",
+                      "name": "Elegant Wooden Gloves",
+                      "weight": 228.45926286256872,
+                      "code": "TASTY STEEL CHICKEN1511905829",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/524.jpg"
                     },
                     {
-                      "id": "51ceffb8-7658-42d4-be4c-444da9e76e2c",
-                      "name": "Awesome Wooden Salad",
-                      "weight": 69.73093177913688,
-                      "code": "GENERIC COTTON SALAD4116301935",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/814.jpg"
+                      "id": "a08ed15f-1f27-4221-ae7a-833189d80cd2",
+                      "name": "Rustic Steel Ball",
+                      "weight": 54.71177438343875,
+                      "code": "SLEEK FRESH PANTS1409717139",
+                      "image": "https://avatars.githubusercontent.com/u/13243430"
                     },
                     {
-                      "id": "73a1c364-feed-4049-b041-da4908a401c6",
-                      "name": "Small Plastic Sausages",
-                      "weight": 155.6881497350987,
-                      "code": "GORGEOUS COTTON TABLE2153623272",
-                      "image": "https://avatars.githubusercontent.com/u/43798962"
+                      "id": "a206828c-3f70-46cc-99c8-007430f7ec8b",
+                      "name": "Incredible Fresh Soap",
+                      "weight": 75.0627403082326,
+                      "code": "ELECTRONIC RUBBER PANTS6984008181",
+                      "image": "https://avatars.githubusercontent.com/u/2755649"
                     },
                     {
-                      "id": "2c84fb1e-3091-4d51-ad44-bd65188bf471",
-                      "name": "Licensed Metal Gloves",
-                      "weight": 102.55754297901876,
-                      "code": "RUSTIC CONCRETE KEYBOARD5933731542",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/256.jpg"
+                      "id": "814f8c71-2990-46c7-a6f4-e3f79a24bc8b",
+                      "name": "Licensed Concrete Cheese",
+                      "weight": 8.988635620567948,
+                      "code": "AWESOME PLASTIC BALL7887125459",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1157.jpg"
                     },
                     {
-                      "id": "a652c2b7-f1ed-415e-8ef9-03deb0b76689",
-                      "name": "Intelligent Steel Keyboard",
-                      "weight": 28.676785898860544,
-                      "code": "FANTASTIC WOODEN FISH439198818",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1186.jpg"
+                      "id": "b031dc1a-eeb0-4510-8577-a0b4a8a429b7",
+                      "name": "Fantastic Soft Salad",
+                      "weight": 101.75137826171704,
+                      "code": "GORGEOUS FRESH FISH2219583113",
+                      "image": "https://avatars.githubusercontent.com/u/79945507"
                     },
                     {
-                      "id": "84dccd13-91e9-4588-94ef-487be0aaa129",
-                      "name": "Incredible Plastic Salad",
-                      "weight": 153.00390876433812,
-                      "code": "MODERN WOODEN PANTS5491755085",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/491.jpg"
+                      "id": "acf75885-48bd-41ea-9219-bd1093ef44cf",
+                      "name": "Incredible Steel Table",
+                      "weight": 257.383617347572,
+                      "code": "TASTY METAL SALAD5323565572",
+                      "image": "https://avatars.githubusercontent.com/u/59279304"
                     },
                     {
-                      "id": "03763c37-5100-4e29-99d9-eb4f7fbc0602",
-                      "name": "Ergonomic Soft Salad",
-                      "weight": 12.279868617188184,
-                      "code": "TASTY FRESH SHOES6493919053",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/420.jpg"
+                      "id": "6656a07c-7ffa-4e58-8da7-2f1ba4bd6ba5",
+                      "name": "Rustic Fresh Sausages",
+                      "weight": 101.61391226085834,
+                      "code": "SLEEK FROZEN TUNA9089458400",
+                      "image": "https://avatars.githubusercontent.com/u/71743518"
                     },
                     {
-                      "id": "c81470e7-81b0-40ef-b200-efa48f4bd32d",
-                      "name": "Gorgeous Cotton Fish",
-                      "weight": 63.01492781867273,
-                      "code": "INCREDIBLE GRANITE BALL5288242911",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/796.jpg"
+                      "id": "a2afe8e4-54d8-4771-9ea8-0252f55cc3c6",
+                      "name": "Electronic Soft Chicken",
+                      "weight": 40.73648482537829,
+                      "code": "HANDMADE COTTON TUNA2606058281",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/133.jpg"
                     },
                     {
-                      "id": "63b65538-7d3f-461c-8c3e-e1d34d33eb6b",
-                      "name": "Tasty Steel Shoes",
-                      "weight": 262.1970941172913,
-                      "code": "ELEGANT PLASTIC BACON371719790",
-                      "image": "https://avatars.githubusercontent.com/u/118411"
-                    },
-                    {
-                      "id": "f9d13af3-9377-4721-8e29-bd1aadc5478d",
-                      "name": "Generic Frozen Chips",
-                      "weight": 225.9738714240957,
-                      "code": "RECYCLED GRANITE HAT6304374644",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/739.jpg"
-                    },
-                    {
-                      "id": "a9a551c2-fce6-42d5-b405-ed5446bea043",
-                      "name": "Bespoke Fresh Table",
-                      "weight": 285.1624883322511,
-                      "code": "SMALL COTTON BALL160369070",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/100.jpg"
-                    },
-                    {
-                      "id": "6b966ce5-370b-4ca8-963f-60ba868b7ed8",
-                      "name": "Handmade Metal Shirt",
-                      "weight": 278.1945852220524,
-                      "code": "LICENSED FRESH GLOVES5878407001",
-                      "image": "https://avatars.githubusercontent.com/u/51382072"
-                    },
-                    {
-                      "id": "60b15003-7802-4792-a0bb-703d4274b659",
-                      "name": "Luxurious Fresh Soap",
-                      "weight": 265.11517693684436,
-                      "code": "LUXURIOUS METAL GLOVES3179770425",
-                      "image": "https://avatars.githubusercontent.com/u/94691784"
-                    },
-                    {
-                      "id": "41657324-2de5-4f3e-8828-e60fddec0dec",
-                      "name": "Handmade Granite Keyboard",
-                      "weight": 203.95414719940163,
-                      "code": "GORGEOUS METAL SALAD1094224282",
-                      "image": "https://avatars.githubusercontent.com/u/30809404"
-                    },
-                    {
-                      "id": "a74cd5cb-a0a6-444f-9f9b-60690db836e9",
-                      "name": "Oriental Wooden Keyboard",
-                      "weight": 296.98646291391924,
-                      "code": "ELEGANT FRESH SALAD7569885910",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/829.jpg"
-                    },
-                    {
-                      "id": "763b79bc-52b3-493a-89f0-3a659d1ee5b6",
-                      "name": "Fantastic Concrete Fish",
-                      "weight": 125.85071079945192,
-                      "code": "FANTASTIC BRONZE CHAIR6752636960",
-                      "image": "https://avatars.githubusercontent.com/u/34952002"
-                    },
-                    {
-                      "id": "da59e5dd-930b-47df-98cb-133de234d38c",
-                      "name": "Elegant Fresh Pizza",
-                      "weight": 13.438368149567395,
-                      "code": "TASTY GRANITE BIKE2752014601",
-                      "image": "https://avatars.githubusercontent.com/u/91395496"
-                    },
-                    {
-                      "id": "61f3e65e-6fdb-4002-8dd5-650afc8d7f2b",
-                      "name": "Handcrafted Cotton Mouse",
-                      "weight": 130.12101188814268,
-                      "code": "SLEEK FRESH TUNA492733597",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1210.jpg"
-                    },
-                    {
-                      "id": "c302eae1-9ee2-4ec3-aed6-9dae7a8a69e0",
-                      "name": "Tasty Rubber Table",
-                      "weight": 22.970153267262504,
-                      "code": "PRACTICAL RUBBER COMPUTER6285421746",
-                      "image": "https://avatars.githubusercontent.com/u/18896589"
-                    },
-                    {
-                      "id": "110787a3-ee20-4d25-ab8f-fbd166f71551",
-                      "name": "Incredible Plastic Ball",
-                      "weight": 59.00094387331046,
-                      "code": "ELECTRONIC RUBBER PIZZA1864022346",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/912.jpg"
-                    },
-                    {
-                      "id": "c8ad9016-5830-4610-a7ab-cced0f1c93bb",
-                      "name": "Recycled Bronze Pizza",
-                      "weight": 82.6335298193153,
-                      "code": "ORIENTAL FRESH SALAD5176065790",
-                      "image": "https://avatars.githubusercontent.com/u/60517779"
-                    },
-                    {
-                      "id": "eec256f6-1cac-4799-970f-dce6e15dfb20",
-                      "name": "Small Frozen Keyboard",
-                      "weight": 181.5693032538984,
-                      "code": "LICENSED STEEL TOWELS8488582906",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/772.jpg"
-                    },
-                    {
-                      "id": "ef34c601-8cab-4006-9dca-ad736cf32a4c",
-                      "name": "Luxurious Plastic Hat",
-                      "weight": 53.67167655029334,
-                      "code": "AWESOME RUBBER GLOVES8361404593",
-                      "image": "https://avatars.githubusercontent.com/u/21096589"
-                    },
-                    {
-                      "id": "97169bf0-cdc8-411d-8e2e-9ab8ab03b82e",
-                      "name": "Rustic Rubber Salad",
-                      "weight": 30.662080818321556,
-                      "code": "ERGONOMIC METAL COMPUTER4499514683",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/37.jpg"
-                    },
-                    {
-                      "id": "5ed22e7b-dfff-48f4-949d-725303d6f560",
-                      "name": "Gorgeous Bronze Bike",
-                      "weight": 248.01399895153008,
-                      "code": "BESPOKE RUBBER PANTS5882063153",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/978.jpg"
-                    },
-                    {
-                      "id": "1ac4548d-6bfa-499d-9e55-27bc8478e614",
-                      "name": "Oriental Soft Towels",
-                      "weight": 292.2651511768345,
-                      "code": "AWESOME FRESH CAR761667448",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/329.jpg"
-                    },
-                    {
-                      "id": "fde8eeb1-c664-46af-8927-e9c4cf76658f",
-                      "name": "Tasty Concrete Tuna",
-                      "weight": 198.9211752600968,
-                      "code": "TASTY GRANITE TABLE5775597199",
-                      "image": "https://avatars.githubusercontent.com/u/75528001"
-                    },
-                    {
-                      "id": "20309d6e-5986-4c51-b834-0fb5b82cefa0",
-                      "name": "Practical Bronze Gloves",
-                      "weight": 175.76741705974564,
-                      "code": "ELEGANT RUBBER TABLE5197933939",
-                      "image": "https://avatars.githubusercontent.com/u/95933144"
-                    },
-                    {
-                      "id": "907fd114-b449-4fc5-ba15-7c437615c8b9",
-                      "name": "Handcrafted Steel Cheese",
-                      "weight": 227.43360812729225,
-                      "code": "INTELLIGENT CONCRETE SALAD2765875236",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/576.jpg"
-                    },
-                    {
-                      "id": "ce1ff212-8093-4c05-bf52-8f3dd568dbba",
-                      "name": "Tasty Soft Computer",
-                      "weight": 219.5714934230782,
-                      "code": "PRACTICAL STEEL CHEESE2996220452",
-                      "image": "https://avatars.githubusercontent.com/u/10089168"
-                    },
-                    {
-                      "id": "bdfef52a-07d8-4ebe-8909-60b269662473",
-                      "name": "Licensed Frozen Sausages",
-                      "weight": 69.12670825677924,
-                      "code": "ELECTRONIC BRONZE TOWELS5979149585",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1011.jpg"
-                    },
-                    {
-                      "id": "cf55d13b-e39a-4130-9ac8-b0bea674feaa",
-                      "name": "Unbranded Concrete Shoes",
-                      "weight": 184.4223932817113,
-                      "code": "RUSTIC METAL SOAP716939904",
-                      "image": "https://avatars.githubusercontent.com/u/57180046"
-                    },
-                    {
-                      "id": "9d91967b-f2ee-433d-bb05-9bb150795e1a",
-                      "name": "Modern Metal Bacon",
-                      "weight": 33.06638868711889,
-                      "code": "MODERN SOFT PANTS7656730783",
-                      "image": "https://avatars.githubusercontent.com/u/16781099"
-                    },
-                    {
-                      "id": "638772e8-f72e-47e9-adff-cbd7ead1b24d",
-                      "name": "Luxurious Metal Bacon",
-                      "weight": 89.37438591616228,
-                      "code": "LICENSED STEEL SALAD1852482526",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/887.jpg"
-                    },
-                    {
-                      "id": "693d3b53-0392-424c-b3df-55a87ab530ff",
-                      "name": "Ergonomic Soft Soap",
-                      "weight": 269.22028480214067,
-                      "code": "HANDCRAFTED FRESH COMPUTER8462400678",
-                      "image": "https://avatars.githubusercontent.com/u/42191427"
-                    },
-                    {
-                      "id": "79831322-6d75-4182-9ff8-778ecacf65ca",
-                      "name": "Intelligent Bronze Hat",
-                      "weight": 262.6971407213714,
-                      "code": "AWESOME STEEL SAUSAGES9937700079",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/855.jpg"
-                    },
-                    {
-                      "id": "f651e519-ccb5-46b0-910c-35391b796823",
-                      "name": "Sleek Wooden Mouse",
-                      "weight": 45.35071789496578,
-                      "code": "PRACTICAL PLASTIC CHICKEN5006479803",
-                      "image": "https://avatars.githubusercontent.com/u/70527465"
-                    },
-                    {
-                      "id": "3d457445-c067-4297-809b-a80009a80c2b",
-                      "name": "Generic Fresh Gloves",
-                      "weight": 267.18212969135493,
-                      "code": "ORIENTAL FROZEN SHOES1891034014",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/142.jpg"
-                    },
-                    {
-                      "id": "50263c6a-3dec-4dd3-83f1-56803c75e216",
-                      "name": "Incredible Wooden Mouse",
-                      "weight": 283.7609977598768,
-                      "code": "RECYCLED COTTON PIZZA8339947936",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/704.jpg"
-                    },
-                    {
-                      "id": "ec21b5aa-30b7-449e-9ea8-ff44ca38aaf8",
-                      "name": "Small Steel Sausages",
-                      "weight": 238.67696484201588,
-                      "code": "AWESOME FRESH KEYBOARD9140803882",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/665.jpg"
-                    },
-                    {
-                      "id": "afe7a9d0-4c5f-4e7c-8531-6957c90fbb0a",
-                      "name": "Generic Steel Ball",
-                      "weight": 97.70521178585476,
-                      "code": "ELECTRONIC COTTON CHIPS2077917951",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/322.jpg"
-                    },
-                    {
-                      "id": "6495d1c4-28f5-4741-83ff-f323a601874d",
-                      "name": "Bespoke Soft Shoes",
-                      "weight": 76.06001050327905,
-                      "code": "TASTY STEEL MOUSE260863126",
-                      "image": "https://avatars.githubusercontent.com/u/7933141"
-                    },
-                    {
-                      "id": "8521b4f3-2632-4972-9b4f-1dc039b37266",
-                      "name": "Refined Metal Computer",
-                      "weight": 126.67049728077836,
-                      "code": "LUXURIOUS SOFT SAUSAGES9488410659",
-                      "image": "https://avatars.githubusercontent.com/u/56548366"
-                    },
-                    {
-                      "id": "4a27ac5f-eb25-4116-bfaa-303a7799498f",
-                      "name": "Handcrafted Metal Computer",
-                      "weight": 123.42720211134292,
-                      "code": "LICENSED COTTON SHIRT9737678827",
-                      "image": "https://avatars.githubusercontent.com/u/35436465"
-                    },
-                    {
-                      "id": "02c028c0-384c-47eb-97b5-74bd87de92df",
-                      "name": "Electronic Fresh Shoes",
-                      "weight": 254.58028749446385,
-                      "code": "ELEGANT METAL SALAD7050977644",
-                      "image": "https://avatars.githubusercontent.com/u/85250532"
-                    },
-                    {
-                      "id": "34eda9d0-443b-44d6-9447-bf4b96c3791f",
-                      "name": "Luxurious Steel Towels",
-                      "weight": 138.1399079314433,
-                      "code": "HANDMADE BRONZE BACON1486753728",
-                      "image": "https://avatars.githubusercontent.com/u/52034879"
-                    },
-                    {
-                      "id": "6ac4d8a2-15a5-4f77-8784-9ebd5c5c0b35",
-                      "name": "Fantastic Plastic Shoes",
-                      "weight": 208.66892189043577,
-                      "code": "RECYCLED PLASTIC MOUSE3353857731",
-                      "image": "https://avatars.githubusercontent.com/u/67509365"
-                    },
-                    {
-                      "id": "ba755a03-6170-47b4-8e4c-2a628577762f",
-                      "name": "Rustic Soft Fish",
-                      "weight": 79.96304984530434,
-                      "code": "SLEEK COTTON FISH6105161830",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/73.jpg"
-                    },
-                    {
-                      "id": "db62e485-bc33-40a1-a607-dbe4e362a9b2",
-                      "name": "Electronic Steel Keyboard",
-                      "weight": 86.3711162689142,
-                      "code": "SLEEK FROZEN FISH7658422057",
-                      "image": "https://avatars.githubusercontent.com/u/82828596"
-                    },
-                    {
-                      "id": "f5f06f47-8e02-4e5d-be6d-21c44fd971b4",
-                      "name": "Awesome Granite Chair",
-                      "weight": 248.83866143249907,
-                      "code": "AWESOME FRESH CHIPS1856553444",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1105.jpg"
-                    },
-                    {
-                      "id": "4bf10442-b8e3-42dc-baf5-aa3802e9da06",
-                      "name": "Bespoke Concrete Pizza",
-                      "weight": 74.5357129778713,
-                      "code": "INTELLIGENT BRONZE TUNA2540800767",
-                      "image": "https://avatars.githubusercontent.com/u/32149794"
-                    },
-                    {
-                      "id": "088e1c47-ccec-4acb-994b-83b0900e0ef1",
-                      "name": "Ergonomic Concrete Car",
-                      "weight": 124.83489334350452,
-                      "code": "AWESOME GRANITE BACON1058853221",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/789.jpg"
-                    },
-                    {
-                      "id": "63c38ba0-64d4-45b0-b633-28dc222c83f9",
-                      "name": "Bespoke Metal Keyboard",
-                      "weight": 5.058372730389237,
-                      "code": "MODERN GRANITE MOUSE5289176542",
-                      "image": "https://avatars.githubusercontent.com/u/42496660"
-                    },
-                    {
-                      "id": "8428590b-bf00-4588-a79b-fd68e4c984d1",
-                      "name": "Luxurious Wooden Fish",
-                      "weight": 26.299896225566044,
-                      "code": "HANDMADE RUBBER TOWELS7207138711",
-                      "image": "https://avatars.githubusercontent.com/u/51842530"
-                    },
-                    {
-                      "id": "1ff163a6-938c-4a1d-907a-d2ad36b36e37",
-                      "name": "Electronic Bronze Towels",
-                      "weight": 37.32358909025788,
-                      "code": "RECYCLED FRESH PIZZA2170009653",
-                      "image": "https://avatars.githubusercontent.com/u/29551620"
-                    },
-                    {
-                      "id": "80281f95-ab1b-450a-9384-9dd399f6c5c5",
-                      "name": "Handmade Soft Pants",
-                      "weight": 116.8285741226282,
-                      "code": "HANDCRAFTED GRANITE SHIRT7309869771",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/757.jpg"
-                    },
-                    {
-                      "id": "a94563de-f156-4ee1-aea0-8ae2660f9d40",
-                      "name": "Small Bronze Cheese",
-                      "weight": 261.0174853026401,
-                      "code": "LICENSED FROZEN SHIRT1784537589",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/5.jpg"
-                    },
-                    {
-                      "id": "f6790c96-2dab-4665-8c06-2b279d87e8a7",
-                      "name": "Bespoke Fresh Car",
-                      "weight": 175.13157691829838,
-                      "code": "GORGEOUS PLASTIC CHEESE2605584657",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/53.jpg"
-                    },
-                    {
-                      "id": "51dad53b-b420-4612-8dbc-cb398864df5b",
-                      "name": "Small Steel Ball",
-                      "weight": 140.48507683956996,
-                      "code": "INTELLIGENT CONCRETE PIZZA3654916522",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/869.jpg"
-                    },
-                    {
-                      "id": "9e705961-6f62-4ba5-85a1-142bf55e10aa",
-                      "name": "Luxurious Wooden Mouse",
-                      "weight": 219.0629489584826,
-                      "code": "LUXURIOUS PLASTIC SHOES7511751813",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/497.jpg"
-                    },
-                    {
-                      "id": "f8e1705d-b573-4f05-9a5e-a1e9c1c41882",
-                      "name": "Recycled Steel Shirt",
-                      "weight": 52.90169270965271,
-                      "code": "HANDCRAFTED CONCRETE SHIRT7281344415",
-                      "image": "https://avatars.githubusercontent.com/u/42622848"
-                    },
-                    {
-                      "id": "59f28f71-29eb-493d-b958-43387890dce7",
-                      "name": "Modern Wooden Ball",
-                      "weight": 69.84055492468178,
-                      "code": "SMALL METAL BACON5350739895",
-                      "image": "https://avatars.githubusercontent.com/u/80015093"
-                    },
-                    {
-                      "id": "a091c685-5208-4ffe-acf1-bae7b95e0523",
-                      "name": "Elegant Fresh Chair",
-                      "weight": 140.7841046655085,
-                      "code": "RUSTIC BRONZE TUNA6663043015",
-                      "image": "https://avatars.githubusercontent.com/u/39557572"
-                    },
-                    {
-                      "id": "e6549bbb-5da3-4cba-9469-1d408bc100d3",
-                      "name": "Handmade Soft Shoes",
-                      "weight": 156.3746533931699,
-                      "code": "INTELLIGENT RUBBER CHAIR5024531646",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/701.jpg"
-                    },
-                    {
-                      "id": "89bc2304-3664-46d1-9866-6a5bdc25a2f5",
-                      "name": "Modern Granite Pizza",
-                      "weight": 15.723376964218916,
-                      "code": "LUXURIOUS FROZEN BACON6955219025",
-                      "image": "https://avatars.githubusercontent.com/u/33517086"
-                    },
-                    {
-                      "id": "7913f7fd-5888-4cfd-84e9-1d473510988f",
-                      "name": "Ergonomic Frozen Computer",
-                      "weight": 149.58421575720422,
-                      "code": "RECYCLED STEEL CHEESE6427950367",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/600.jpg"
-                    },
-                    {
-                      "id": "6e6f2ae6-0ed6-41f9-b61b-7e9ffe5e23bf",
-                      "name": "Modern Fresh Sausages",
-                      "weight": 140.8380588083528,
-                      "code": "ORIENTAL COTTON SHOES4163712841",
-                      "image": "https://avatars.githubusercontent.com/u/74823929"
-                    },
-                    {
-                      "id": "3d98a8f3-59fd-42c1-85c4-c4bd68a538ec",
-                      "name": "Small Granite Chips",
-                      "weight": 35.888875083532184,
-                      "code": "ORIENTAL METAL HAT8739832722",
-                      "image": "https://avatars.githubusercontent.com/u/20728889"
-                    },
-                    {
-                      "id": "5f216542-237f-42c8-910c-28d578c69f03",
-                      "name": "Incredible Frozen Pants",
-                      "weight": 78.30201339232735,
-                      "code": "TASTY FRESH MOUSE9076378781",
-                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/17.jpg"
+                      "id": "cfff2589-5cc1-4200-80c8-42de6a897c6a",
+                      "name": "Intelligent Plastic Sausages",
+                      "weight": 7.106804608600214,
+                      "code": "BESPOKE COTTON CAR8552136947",
+                      "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1112.jpg"
                     }
                   ]
                 }
@@ -870,7 +396,7 @@
         }
       }
     },
-    "/api/drones/7f90a78f-4a86-434b-afc9-d808455d33c6/load": {
+    "/api/drones/1f613288-a438-4f06-8263-7afbc4c77418/load": {
       "post": {
         "summary": "",
         "description": "",
@@ -884,7 +410,7 @@
               "schema": {
                 "type": "object",
                 "properties": {
-                  "medications": {
+                  "medicationItems": {
                     "type": "array",
                     "items": {
                       "type": "string"
@@ -893,10 +419,10 @@
                 }
               },
               "example": {
-                "medications": [
-                  "a20f413a-8fa8-4fb0-ba61-52eaaff7e974",
-                  "ba755a03-6170-47b4-8e4c-2a628577762f",
-                  "ef34c601-8cab-4006-9dca-ad736cf32a4c"
+                "medicationItems": [
+                  "2c123407-e5ed-473b-8057-66e217627f3a",
+                  "a206828c-3f70-46cc-99c8-007430f7ec8b",
+                  "87437465-edcc-4ad0-b886-b42b1bb411ef"
                 ]
               }
             }
@@ -911,6 +437,136 @@
                   "type": "string"
                 },
                 "example": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/drones/1f613288-a438-4f06-8263-7afbc4c77418/medications": {
+      "get": {
+        "summary": "",
+        "description": "",
+        "tags": [
+          "Medications"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "drone": {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "serialNumber": {
+                          "type": "string"
+                        },
+                        "weightLimit": {
+                          "type": "number"
+                        },
+                        "state": {
+                          "type": "string"
+                        },
+                        "model": {
+                          "type": "string"
+                        },
+                        "isActive": {
+                          "type": "boolean"
+                        },
+                        "batteryCapacity": {
+                          "type": "number"
+                        },
+                        "droneMedications": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "quantity": {
+                                "type": "number"
+                              },
+                              "medication": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string"
+                                  },
+                                  "name": {
+                                    "type": "string"
+                                  },
+                                  "weight": {
+                                    "type": "number"
+                                  },
+                                  "code": {
+                                    "type": "string"
+                                  },
+                                  "image": {
+                                    "type": "string"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "example": {
+                  "drone": {
+                    "id": "1f613288-a438-4f06-8263-7afbc4c77418",
+                    "serialNumber": "4812315717061704486204930258867512746832189754656816876041891738356249178128180133687746115619210771",
+                    "weightLimit": 500,
+                    "state": "LOADED",
+                    "model": "Middleweight",
+                    "isActive": true,
+                    "batteryCapacity": 100,
+                    "droneMedications": [
+                      {
+                        "id": "68ae8451-6e5e-4cab-b790-9a235756b5ea",
+                        "quantity": 0,
+                        "medication": {
+                          "id": "a206828c-3f70-46cc-99c8-007430f7ec8b",
+                          "name": "Incredible Fresh Soap",
+                          "weight": 75.0627403082326,
+                          "code": "ELECTRONIC RUBBER PANTS6984008181",
+                          "image": "https://avatars.githubusercontent.com/u/2755649"
+                        }
+                      },
+                      {
+                        "id": "75a4fcdf-101c-4640-8d52-256d20ecc010",
+                        "quantity": 0,
+                        "medication": {
+                          "id": "87437465-edcc-4ad0-b886-b42b1bb411ef",
+                          "name": "Practical Metal Shirt",
+                          "weight": 4.781217182055116,
+                          "code": "ERGONOMIC FRESH PANTS9464065489",
+                          "image": "https://avatars.githubusercontent.com/u/56850372"
+                        }
+                      },
+                      {
+                        "id": "1f008952-6df6-4ee7-a6ac-e6673404613b",
+                        "quantity": 0,
+                        "medication": {
+                          "id": "2c123407-e5ed-473b-8057-66e217627f3a",
+                          "name": "Sleek Concrete Tuna",
+                          "weight": 2.589402886806056,
+                          "code": "GORGEOUS METAL TABLE6673617686",
+                          "image": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/526.jpg"
+                        }
+                      }
+                    ]
+                  }
+                }
               }
             }
           }

@@ -25,7 +25,7 @@ table Drone as drone {
   state DroneState [default: IDLE]
 }
 
-table LoadedDrone {
+table DroneMedication {
   droneId int
   medicationIds int [ref: > medication.id]
 }

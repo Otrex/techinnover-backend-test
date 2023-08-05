@@ -73,13 +73,25 @@ describe('Dispatcher Test E2E', () => {
     it('should load medications to drone', async () => {
       const res = await server.post(`/api/drones/${droneId}/load`).send({
         medicationItems: faker.helpers.arrayElements(
-          medications.map((m) => m.id),
+          medications.filter((m) => m.weight < 260).map(m => m.id),
           3
         )
       });
 
       if (res.error) console.log(res.error);
 
+      assert.equal(res.statusCode, 200);
+      documentation.addEndpoint(res, {
+        tags: ['Medications'],
+      });
+    });
+
+    it('should get medications loaded to drone', async () => {
+      const res = await server.get(`/api/drones/${droneId}/medications`)
+
+      if (res.error) console.log(res.error);
+      console.log(res.body);
+      
       assert.equal(res.statusCode, 200);
       documentation.addEndpoint(res, {
         tags: ['Medications'],

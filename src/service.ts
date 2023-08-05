@@ -1,6 +1,6 @@
 import { AppDataSource } from './database/connection';
 import { Drone } from './database/entities/Drone.entity';
-import { LoadedDrone } from './database/entities/LoadedDrone.entity';
+import { DroneMedication } from './database/entities/DroneMedication.entity';
 import { Medication } from './database/entities/Medication.entity';
 import { DroneState } from './database/enum';
 import AppError from './lib/errors';
@@ -9,7 +9,7 @@ import { AddDroneRequest, GetDroneRequest, LoadDroneRequest } from './validators
 
 export default class Service {
   droneRepo = AppDataSource.getRepository(Drone);
-  loadedDroneRepo = AppDataSource.getRepository(LoadedDrone);
+  droneMedicationRepo = AppDataSource.getRepository(DroneMedication);
   medicationRepo = AppDataSource.getRepository(Medication);
 
   @Validate(AddDroneRequest)
@@ -59,22 +59,29 @@ export default class Service {
 
   @Validate(GetDroneRequest)
   async getLoadedDrone(params: GetDroneRequest) {
-    const drone = await this.droneRepo.findOne({
-      where: {
-        id: params.droneId
-      },
-      relations: [
-        "loaded"
-      ]
-    })
+    // const drone = await this.droneRepo.findOne({
+    //   where: {
+    //     id: params.droneId
+    //   },
+    //   relations: [
+    //     "load"
+    //   ]
+    // })
+
+    const drone = await this.droneRepo.createQueryBuilder('drone')
+    .leftJoinAndSelect('drone.droneMedications', 'droneMedication')
+    .leftJoinAndSelect('droneMedication.medication', 'medication')
+    .where('drone.id = :droneId', { droneId: params.droneId })
+    .getOne();
 
     if (!drone) throw new AppError(`drone not found`, 404);
-    
+
     return { drone }
   }
 
   @Validate(LoadDroneRequest)
   async loadDrone(params: LoadDroneRequest) {
+    //TODO Fetch and calculate the current weight on drone
     const drone = await this.droneRepo.findOne({
       where: {
         id: params.droneId,
@@ -111,7 +118,7 @@ export default class Service {
 
     await Promise.all(
       medicationItems.map((medication) =>
-        this.loadedDroneRepo.save({
+        this.droneMedicationRepo.save({
           drone: drone,
           medication: medication!,
         })

@@ -3,26 +3,46 @@ import { Router } from "express";
 const router = Router();
 
 // Register a new drone
-router.post('/drones', (req, res) => {
-  
+router.post('/drones', (req, res, next) => {
+  try {
+    
+  } catch (error) {
+    next(error);
+  }
 });
 
 // Load medication items into a drone
-router.post('/drones/:drone_id/load', (req, res) => {
-  
+router.post('/drones/:drone_id/load', (req, res, next) => {
+  try {
+    
+  } catch (error) {
+    next(error);
+  }
 });
 
 // Retrieve loaded medication items for a given drone
-router.get('/drones/:drone_id/loaded-medications', (req, res) => {
-  
+router.get('/drones/:drone_id/loaded-medications', (req, res, next) => {
+  try {
+    
+  } catch (error) {
+    next(error);
+  }
 });
 
 // Get a list of available drones for loading
-router.get('/drones/available-for-loading', (req, res) => {
-  
+router.get('/drones/available-for-loading', (req, res, next) => {
+  try {
+    
+  } catch (error) {
+    next(error);
+  }
 });
 
 // Get the battery level for a given drone
-router.get('/drones/:drone_id/battery-level', (req, res) => {
-  
+router.get('/drones/:drone_id/battery-level', (req, res, next) => {
+  try {
+    
+  } catch (error) {
+    next(error);
+  }
 });

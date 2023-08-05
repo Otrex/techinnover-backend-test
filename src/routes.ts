@@ -1,11 +1,16 @@
 import { Router } from "express";
+import Service from "./service";
 
+const service = new Service();
 const router = Router();
 
 // Register a new drone
-router.post('/drones', (req, res, next) => {
+router.post('/drones', async (req, res, next) => {
   try {
-    
+    const data = await service.addDrone({
+      ...req.body
+    })
+    return res.status(201).json(data);
   } catch (error) {
     next(error);
   }

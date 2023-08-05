@@ -1,6 +1,5 @@
 import { ClassConstructor, plainToClass, plainToInstance } from 'class-transformer';
 import { validate, ValidationError as CValidationError } from 'class-validator';
-import { ValidationException } from '../exceptions';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export type ArgumentTypes<F extends Function> = F extends (...args: infer A) => any ? A : never;

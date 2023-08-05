@@ -16,10 +16,10 @@ export class Drone {
   @Column({ type: "float", default: 500.0 })
   weightLimit: boolean;
 
-  @Column({ type: "enum", enum: DroneState, default: DroneState.IDLE })
+  @Column({ default: DroneState.IDLE })
   state: DroneState;
 
-  @Column({ type: "enum", enum: DroneState, nullable: false })
+  @Column({ nullable: false })
   model: DroneModel;
 
   @Column()

@@ -1,9 +1,23 @@
 import { join } from "path";
+import { SqliteConnectionOptions } from "typeorm/driver/sqlite/SqliteConnectionOptions";
 
-export default {
+type Config = {
+  app: Record<string, any>;
+  database: SqliteConnectionOptions;
+}
+
+const config: Config = {
   app: {
     name: process.env.APP_NAME!,
     env: process.env.APP_ENV! || "development",
-    staticFilePath: join(__dirname, "..", "static")
+    staticFilePath: join(__dirname, "..", "static"),
+  },
+  database: {
+    type :"sqlite",
+    database: join(__dirname, "database", "data.sqlite"),
+    entities: [__dirname + "/**/*.entity{.ts,.js}"],
+    synchronize: true
   }
 }
+
+export default config;

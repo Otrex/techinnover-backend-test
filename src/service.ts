@@ -123,5 +123,9 @@ export default class Service {
         state: DroneState.LOADED,
       }
     );
+
+    return {
+      message: "drone loaded successfully"
+    }
   }
 }

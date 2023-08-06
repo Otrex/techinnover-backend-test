@@ -39,9 +39,6 @@ router.get('/drones/available', async (req, res, next) => {
 // Load medication items into a drone
 router.post('/drones/:drone_id/load', async (req, res, next) => {
   try {
-
-    console.log(req.body);
-    
     const data = await service.loadDrone({
       droneId: req.params.drone_id,
       medicationItems: req.body.medicationItems,

@@ -21,25 +21,11 @@ const periodicBatteryCheck = async () => {
   }
 }
 
-const cron = new CronJob('0 */1 * * *', async () => {
+export const cron = new CronJob('* * * * *', async () => {
   try {
+    console.log("- Checking battery level...")
     await periodicBatteryCheck();
   } catch (err: any) {
     console.error(err);
   }
 });
-
-const run = () => {
-  if (require.main === module) {
-    try {
-      cron.start();
-      return cron;
-    } catch (e) {
-      console.error(e);
-    } finally {
-      process.exit(0);
-    }
-  }
-};
-
-export default run();

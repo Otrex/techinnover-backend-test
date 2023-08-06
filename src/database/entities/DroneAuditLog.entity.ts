@@ -13,6 +13,6 @@ export class DroneAuditLog {
   @Column({ type: 'int', default: 100 })
   batteryLevel: number;
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 }

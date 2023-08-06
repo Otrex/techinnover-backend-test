@@ -3,12 +3,19 @@ import { AppDataSource } from './database/connection';
 import { runSeeders } from 'typeorm-extension';
 import app from './app';
 import config from './config';
+import { cron } from './cron';
+
 
 (async () => {
   const dataSource = await AppDataSource.initialize();
-  await runSeeders(dataSource);
+  console.log("- Database connected");
   
+  await runSeeders(dataSource);
+  console.log("- Seeding successful")
+
+  cron.start();
+
   app.listen(config.app.port, () => {
-    console.log(`\u{2708} - Server listening on port: ${config.app.port}`);
+    console.log(`- Server on port: ${config.app.port}`);
   });
 })().catch(console.error);

@@ -9,7 +9,7 @@
     "sync:env": "yarn sync-dotenv",
     "start": "node -r module-alias/register ./build/src/server.js",
     "typeorm": "typeorm-ts-node-commonjs",
-    "build": "rimraf ./build && tsc",
+    "build": "rimraf ./build && tsc && mkdir ./build/docs && cp -r ./docs/* ./build/docs/api.json",
     "migrate-ts": "npx typeorm-ts-node-esm migration:run --dataSource ./src/database/connection.ts",
     "test": "APP_ENV=test mocha -r tsconfig-paths/register -r ts-node/register --spec test/**/*.test.ts"
   },
